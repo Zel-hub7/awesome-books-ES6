@@ -26,4 +26,3 @@ export const initializeLinks = () => {
     addBookContainer.style.display = 'none';
   });
 };
-
