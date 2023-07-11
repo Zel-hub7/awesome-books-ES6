@@ -1,23 +1,13 @@
-// import { DateTime } from 'luxon';
+import { DateTime } from './Luxon.js';
 
-export class DateTimeComponent {
-  constructor() {
-    // ...
-  }
+const timeDate = document.getElementById('date');
 
-  getCurrentDateTime() {
-    const now = DateTime.local();
-    return now.toFormat('MMMM dd, yyyy, HH:mm:ss');
-  }
-
-  render() {
-    const formattedDateTime = this.getCurrentDateTime();
-
-    const element = document.createElement('div');
-    element.innerHTML = `
-      <p>Current Date and Time: ${formattedDateTime}</p>
-    `;
-
-    return element;
-  }
+const dateAndTime = () => {
+  setInterval(() => {
+    const date = `${DateTime.now().toLocaleString(DateTime.DATETIME_MED)}`;
+    timeDate.innerHTML = date;
+  }, 0);
 }
+dateAndTime();
+
+export default dateAndTime;

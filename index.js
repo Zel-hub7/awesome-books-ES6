@@ -1,10 +1,18 @@
-import { BookCollection } from './Modules/bookCollection.js';
-import { initializeLinks } from './Modules/linkHandler.js';
-import { initializeForm } from './Modules/form.js';
-import { DateTimeComponent } from './Modules/DateTimeComponent.js';
+import { BookCollection } from './modules/bookCollection.js';
+import { initializeLinks } from './modules/linkHandler.js';
+import { initializeForm } from './modules/form.js';
 
 
-const date = new DateTimeComponent();
+
+let DateTime = luxon.DateTime;
+// Output: 2023-06-19T09:00:00.882+05:30 
+console.log(DateTime.now().toString());
+const dateContainer = document.getElementById('datetime-container');
+let dateContent  = document.createElement('p');
+dateContent.textContent = `${DateTime.now().toString()}`;
+dateContainer.appendChild(dateContent);
+
+
 const bookCollection = new BookCollection();
 
 
