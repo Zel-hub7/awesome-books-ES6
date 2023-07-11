@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Awesome Books</title>
 </head>
-<body>
-    
+
+<body class="body">
+    <div class="nav">
+        <div class="navigation">
+            <h2 class="logo"><a id="logo" href="index.html">Awesome Books</a></h2>
+            <ul>
+                <li><a id="all-books-link" href="#">Lists</a></li>
+                <li>|</li>
+                <li><a id="add-book-link" href="#">Add New</a></li>
+                <li>|</li>
+                <li><a id="contact" href="#">Contact</a></li>
+            </ul>
+        </div>
+        <time id="time" datetime="2021-04-19">Match 19th 2021, 9:25:32 am</time>
+    </div>
+
+    <div id="all-books-container">
+        <h1 class="titles"></h1>
+        <h1 id="book-collection-title"></h1>
+
+        <div id="books-container"></div>
+    </div>
+
+    <div id="add-book-container">
+        <form class="form" id="add-book-form">
+            <h1 class="form-title">Add a New Book</h1>
+            <label for="title">Title:</label>
+            <input placeholder="Title" type="text" id="title" required>
+
+            <label for="author">Author:</label>
+            <input placeholder="Author" type="text" id="author" required>
+
+            <button id="btn" type="submit">Add Book</button>
+        </form>
+    </div>
+
+    <section>
+        <div id="contact">
+            <div class="contact">
+                <h1>Contact Information</h1>
+                <p>Do you have any questions or want to say "Hello"? You can reach out to us!</p>
+            </div>
+
+            <ul class="about-list">
+                <li>Our e-mail: mail@gmail.com</li>
+                <li>Our Phone number: 0043586534422</li>
+                <li>Our address: streetname 22, 84503 City, Country</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="foot">
+            <h2>Copyright</h2>
+        </div>
+    </footer>
+
+    <script src="modules/book.js" type="module"></script>
+    <script src="modules/bookCollection.js" type="module"></script>
+    <script src="modules/navLinks.js" type="module"></script>
+    <script src="index.js" type="module"></script>
 </body>
+
 </html>

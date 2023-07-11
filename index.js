@@ -1,2 +1,19 @@
-let h1 = 'hello';
-console.log(h1);
+import { BookCollection } from './modules/bookCollection.js';
+
+const bookCollection = new BookCollection();
+
+const addBookForm = document.getElementById('add-book-form');
+addBookForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const titleInput = document.getElementById('title');
+  const authorInput = document.getElementById('author');
+  const title = titleInput.value;
+  const author = authorInput.value;
+
+  bookCollection.addBook(title, author);
+
+  titleInput.value = '';
+  authorInput.value = '';
+});
+
+bookCollection.loadFromLocalStorage();
