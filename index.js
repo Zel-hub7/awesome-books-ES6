@@ -9,7 +9,7 @@ let DateTime = luxon.DateTime;
 console.log(DateTime.now().toString());
 const dateContainer = document.getElementById('datetime-container');
 let dateContent  = document.createElement('p');
-dateContent.textContent = `${DateTime.now().toString()}`;
+dateContent.textContent = `${DateTime.now().toLocaleString(DateTime.DATETIME_MED)}`;
 dateContainer.appendChild(dateContent);
 
 
