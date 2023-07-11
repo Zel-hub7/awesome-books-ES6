@@ -1,6 +1,6 @@
-import { BookCollection } from './modules/bookCollection.js';
-import { initializeLinks } from './modules/linkHandler.js';
-import { initializeForm } from './modules/form.js';
+import  BookCollection  from './modules/bookCollection.js';
+import  initializeLinks  from './modules/linkHandler.js';
+import  initializeForm  from './modules/form.js';
 import { DateTime } from './modules/Luxon.js';
 
 const dateContainer = document.getElementById('datetime-container');

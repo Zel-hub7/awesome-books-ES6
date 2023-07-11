@@ -1,4 +1,4 @@
-class BookCollection {
+export default class BookCollection {
   constructor() {
     this.books = [];
   }
@@ -66,4 +66,3 @@ class BookCollection {
     }
   }
 }
-export { BookCollection };

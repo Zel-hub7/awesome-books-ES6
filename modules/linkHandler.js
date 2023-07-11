@@ -1,4 +1,4 @@
-export const initializeLinks = () => {
+const initializeLinks = () => {
   // Add event listeners to the links
   const allBooksLink = document.getElementById('all-books-link');
   const addBookLink = document.getElementById('add-book-link');
@@ -26,3 +26,4 @@ export const initializeLinks = () => {
     addBookContainer.style.display = 'none';
   });
 };
+export default initializeLinks;

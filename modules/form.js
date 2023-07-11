@@ -1,4 +1,4 @@
-export const initializeForm = (bookCollection) => {
+const initializeForm = (bookCollection) => {
   const addBookForm = document.getElementById('add-book-form');
   addBookForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -13,3 +13,4 @@ export const initializeForm = (bookCollection) => {
     authorInput.value = '';
   });
 };
+export default initializeForm;
