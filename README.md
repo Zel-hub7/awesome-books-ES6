@@ -64,7 +64,8 @@ Install this project with: -Git clone on your cd Desktop using my repository lin
 
 -To run the project, copy its path and run it on your online server.
 
-
+### Live Demo
+<a href ="https://zel-hub7.github.io/awesome-books-ES6/">Live demo</a>
 
 ### Run tests
 
